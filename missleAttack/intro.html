@@ -1,0 +1,27 @@
+
+<html>
+    <head></head>
+    <body>
+        <video width="1200" height="800"autoplay controls id="video">
+
+        <source src="./vid/intro.webm">can't load 
+        </video>
+
+        <button id = "myButt" onclick="window.location.href='missleAttack.html'" type="button" hidden="true">Continue</button>
+    </body>
+</html> 
+
+<script>
+var vidTimer=setInterval(showButt,30000);
+
+function showButt(){
+  console.log("In showButt function");
+  document.getElementById("myButt").hidden = "";
+  document.getElementById("myButt").style.visiblity="visible";
+}
+
+function play(){
+    document.location=""
+}
+
+</script>
